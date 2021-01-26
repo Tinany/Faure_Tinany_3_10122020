@@ -1,0 +1,13 @@
+.header {
+    &--BackArrow {
+      position: relative;
+    }
+  
+    &__BackArrow {
+      position: absolute;
+      left: 2rem;
+      top: 40%;
+      font-size: 1.2rem;
+      color: black;
+    }
+  }

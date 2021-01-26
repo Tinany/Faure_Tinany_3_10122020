@@ -1,0 +1,48 @@
+.localisation {
+
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 1rem;
+    background-color: #f3f3f3;
+    font-size: 1.2rem;
+    position: relative;
+
+    &__marker {
+        margin-right: 1rem;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-weight: 700;
+    }
+}
+.leading {
+
+    padding: 2rem;
+    text-align: center;
+    background-color: #fafafa;
+
+    &__title{
+        margin: 0;
+    }
+    &__subtitle{
+        font-weight: 300;
+        margin: 1.5rem 0;
+    }
+}
+.operation {
+
+    padding: 2rem 1rem;
+    &__title{
+        margin-top: 0;
+    }
+}
+.operation-ctn {
+
+    max-width: 1280px;
+    margin: auto;
+
+    &__items {
+        display: flex;
+    }
+}
