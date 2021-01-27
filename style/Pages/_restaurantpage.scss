@@ -10,4 +10,27 @@
       font-size: 1.2rem;
       color: black;
     }
+}
+.restaurant-img{
+  max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
+}
+.menu{
+  max-width: 1280px;
+  margin: auto;
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+
+  &__header{
+    font-family: $police-logo_title;
+    padding: 1rem 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
+}

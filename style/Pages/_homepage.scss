@@ -27,22 +27,107 @@
     }
     &__subtitle{
         font-weight: 300;
-        margin: 1.5rem 0;
     }
 }
 .operation {
 
     padding: 2rem 1rem;
-    &__title{
-        margin-top: 0;
-    }
 }
 .operation-ctn {
 
-    max-width: 1280px;
     margin: auto;
+    max-width: 1280px;
+    
+    &__title{
+        margin: 0;
+    }
 
     &__items {
+        list-style: none;
         display: flex;
+        padding: 0;
+    }
+
+    &__item{
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(82, 82, 82, 0.2);
+        border-radius: 1.25rem;
+        background-color: #f6f6f6;
+        padding: 1.5rem;
+        flex: 1;
+        margin-right: 2rem;
+
+        &::before{
+            counter-increment: counterOpList 1;
+            content: counter(counterOpList) " ";
+            background: $color-primary;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            position: absolute;
+            margin-left: -2em;
+        }
+    }
+
+    &__icon{
+        margin-right: 1rem;
+        color: #7e7e7e;
+    }
+}
+.restaurants{
+    background-color: #f6f6f6;
+    padding: 2rem 1rem;
+
+    &__title{
+        margin-left: 300px;
+    }
+}
+.restaurants-ctn{
+
+    max-width: 1280px;
+    margin: 0 300px 0 300px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+    &__cards{
+        background-color: #fff;
+        border-radius: 1rem;
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    &__card{
+        margin: 0;
+    }
+
+    &__img{
+        height: 12rem;
+        width: 100%;
+        border: 0 solid transparent;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: none;
+        object-fit: cover;
+    }
+
+    &__legend{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__new{
+        background-color: #99e2d0;
+        color: #1b6150;
+        padding: .5rem;
+        border-radius: .125rem;
+        position: absolute;
+        top: 1rem;
+        right: .75rem;
     }
 }
