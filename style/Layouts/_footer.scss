@@ -3,6 +3,11 @@
     background-color: #353535;
     display: flex;
     flex-direction: column;
+    padding-top: 15px;
+
+    @media (max-width: 1316px) {
+        margin-left: -15px;
+    }
 
     &__logo {
         color: white;

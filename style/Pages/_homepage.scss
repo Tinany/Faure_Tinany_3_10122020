@@ -43,8 +43,12 @@
         list-style: none;
         display: flex;
         padding: 0;
-    }
 
+        @media (max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
     &__item {
         box-shadow: 0.25rem 0.25rem 0.5rem rgba(82, 82, 82, 0.2);
         border-radius: 1.25rem;
@@ -53,19 +57,9 @@
         flex: 1;
         margin-right: 2rem;
 
-        &::before{
-            counter-increment: counterOpList 1;
-            content: counter(counterOpList) " ";
-            background: $color-primary;
-            height: 1.5rem;
-            width: 1.5rem;
-            border-radius: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            position: absolute;
-            margin-left: -2em;
+        @media (max-width: 1000px) {
+            margin: 0;
+            margin-bottom: 2rem;
         }
     }
     &__icon{
@@ -80,6 +74,11 @@
 
     &__title {
         margin-left: 300px;
+
+        @media (max-width: 1000px) {
+            margin: 0;
+            margin-bottom: 20px;
+        }
     }
 
     &__cards {
@@ -102,11 +101,6 @@
         border-radius: 1rem 1rem 0 0;
         box-shadow: none;
         object-fit: cover;
-    }
-
-    &__legend {
-        display: flex;
-        justify-content: space-between;
     }
 
     &__new {
