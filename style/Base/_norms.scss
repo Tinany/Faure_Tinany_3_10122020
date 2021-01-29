@@ -8,3 +8,12 @@ body, html {
     max-width: 1280px;
     margin: auto;
 }
+.container {
+
+    max-width: 1280px;
+    margin-left: 0;
+
+    @media (min-width: 1920px) {
+        margin-left: 280px;
+    }
+}

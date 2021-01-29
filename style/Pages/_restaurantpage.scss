@@ -24,6 +24,7 @@
   max-width: 1280px;
   margin: auto;
   margin-top: -4rem;
+  padding-bottom: 20px;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
   z-index: 1;
@@ -35,5 +36,47 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-weight: 100;
+    position: relative;
+    line-height: 2;
+
+    :after {
+      content: "";
+      width: 2.5rem;
+      height: .20rem;
+      background-color: $color-tertiary;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__items {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  &__item {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__list {
+    background-color: #fff;
+    padding: 0;
+    border-radius: .75rem;
+    margin: 1rem 0;
+  }
+
+  &__footer {
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
 }
