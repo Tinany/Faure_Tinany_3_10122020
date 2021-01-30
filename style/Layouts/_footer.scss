@@ -1,6 +1,6 @@
 .footer {
 
-    background-color: #353535;
+    background-color: darken($color-background, 80%);
     display: flex;
     flex-direction: column;
     padding-top: 15px;
@@ -10,7 +10,7 @@
     }
 
     &__logo {
-        color: white;
+        color: $color-background;
         font-family: $police-logo_title;
         font-size: 1.2rem;
         margin: 1rem 0 .5rem 2em;
@@ -21,7 +21,7 @@
 
         a {
             text-decoration: none;
-            color: #fff;
+            color: $color-background;
 
             i {
                 width: 1.2rem;

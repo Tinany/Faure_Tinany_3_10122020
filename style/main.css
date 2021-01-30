@@ -23,13 +23,13 @@ body, html {
 
 .button {
   cursor: pointer;
+  font-weight: 500;
+  font-size: 1.1rem;
   padding: .75rem 1.5rem;
   border: 0;
   border-radius: 100px;
   color: #fff;
-  font-weight: 500;
-  font-size: 1.1rem;
-  background-color: #686868;
+  background-color: dimgray;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
@@ -173,7 +173,7 @@ body, html {
 }
 
 .footer {
-  background-color: #353535;
+  background-color: #333333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,7 +191,7 @@ body, html {
 }
 
 .footer__logo {
-  color: white;
+  color: #fff;
   font-family: "Shrikhand";
   font-size: 1.2rem;
   margin: 1rem 0 .5rem 2em;
@@ -220,7 +220,7 @@ body, html {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1.25rem 1rem;
-  background-color: #f3f3f3;
+  background-color: #f2f2f2;
   font-size: 1.2rem;
 }
 
@@ -279,7 +279,7 @@ body, html {
   -webkit-box-shadow: 0.25rem 0.25rem 0.5rem rgba(82, 82, 82, 0.2);
           box-shadow: 0.25rem 0.25rem 0.5rem rgba(82, 82, 82, 0.2);
   border-radius: 1.25rem;
-  background-color: #f6f6f6;
+  background-color: #f7f7f7;
   padding: 1.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -300,7 +300,7 @@ body, html {
 }
 
 .restaurants {
-  background-color: #f6f6f6;
+  background-color: #f7f7f7;
   padding: 2rem 1rem;
 }
 
@@ -340,8 +340,8 @@ body, html {
 }
 
 .restaurants__new {
-  background-color: #99e2d0;
-  color: #1b6150;
+  background-color: #99E2D0;
+  color: #217460;
   padding: .5rem;
   border-radius: .125rem;
   position: absolute;
@@ -358,7 +358,7 @@ body, html {
   left: 2rem;
   top: 40%;
   font-size: 1.2rem;
-  color: black;
+  color: #030303;
 }
 
 .restaurant-img {
@@ -375,7 +375,7 @@ body, html {
   margin-top: -4rem;
   padding-bottom: 20px;
   border-radius: 2rem 2rem 0 0;
-  background-color: #f6f6f6;
+  background-color: #f7f7f7;
   z-index: 1;
   position: relative;
 }
