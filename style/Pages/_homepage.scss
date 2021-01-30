@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     padding: 1.25rem 1rem;
-    background-color: #f3f3f3;
+    background-color: darken($color-background, 5%);
     font-size: 1.2rem;
 
     &__marker {
@@ -21,7 +21,7 @@
 
     padding: 2rem;
     text-align: center;
-    background-color: #fafafa;
+    background-color: darken($color-background, 2%);
 
     &__title {
         margin: 0;
@@ -52,7 +52,7 @@
     &__item {
         box-shadow: 0.25rem 0.25rem 0.5rem rgba(82, 82, 82, 0.2);
         border-radius: 1.25rem;
-        background-color: #f6f6f6;
+        background-color: darken($color-background, 3%);
         padding: 1.5rem;
         flex: 1;
         margin-right: 2rem;
@@ -69,7 +69,7 @@
 }
 //Restaurant section
 .restaurants {
-    background-color: #f6f6f6;
+    background-color: darken($color-background, 3%);
     padding: 2rem 1rem;
 
     &__title {
@@ -82,7 +82,7 @@
     }
 
     &__cards {
-        background-color: #fff;
+        background-color: $color-background;
         border-radius: 1rem;
         position: relative;
         text-decoration: none;
@@ -104,8 +104,8 @@
     }
 
     &__new {
-        background-color: #99e2d0;
-        color: #1b6150;
+        background-color: $color-tertiary;
+        color: darken($color-tertiary, 45%);
         padding: .5rem;
         border-radius: .125rem;
         position: absolute;
