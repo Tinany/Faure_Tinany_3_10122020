@@ -37,9 +37,7 @@ body, html {
 }
 
 .fa-heart {
-  font-size: 30px;
-  color: transparent;
-  -webkit-text-stroke: 3px black;
+  font-size: 32px;
 }
 
 .grid {
