@@ -2,11 +2,11 @@
 .header {
   
     &--BackArrow {
-      position: relative;
+      position: relative; // to add back arrow on
     }
   
     &__BackArrow {
-      position: absolute;
+      position: absolute; // back arrow on left
       left: 2rem;
       top: 40%;
       font-size: 1.2rem;
@@ -17,7 +17,7 @@
 .restaurant-img {
 
   max-width: 100%;
-  max-height: 32rem;
+  max-height: 33rem;
   width: 100%;
   object-fit: cover;
 }
@@ -30,7 +30,7 @@
   padding-bottom: 20px;
   border-radius: 2rem 2rem 0 0;
   background-color: darken($color-background, 3%);
-  z-index: 1;
+  z-index: 1; // Overlap
   position: relative;
 
   &__header {
@@ -48,7 +48,7 @@
     line-height: 2;
 
     :after {
-      content: "";
+      content: ""; // to add underline 
       width: 2.5rem;
       height: .20rem;
       background-color: $color-tertiary;

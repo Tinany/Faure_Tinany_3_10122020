@@ -84,9 +84,9 @@
     &__cards {
         background-color: $color-background;
         border-radius: 1rem;
-        position: relative;
+        position: relative; // for add new on
         text-decoration: none;
-        color: inherit;
+        color: inherit; // black
         display: block;
     }
 
@@ -108,7 +108,7 @@
         color: darken($color-tertiary, 45%);
         padding: .5rem;
         border-radius: .125rem;
-        position: absolute;
+        position: absolute; // on .cards
         top: 1rem;
         right: .75rem;
     }

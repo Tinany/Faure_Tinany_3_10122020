@@ -30,14 +30,16 @@ body, html {
   border-radius: 100px;
   color: #fff;
   background-color: dimgray;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 
 .fa-heart {
   font-size: 30px;
+  color: transparent;
+  -webkit-text-stroke: 3px black;
 }
 
 .grid {
@@ -363,7 +365,7 @@ body, html {
 
 .restaurant-img {
   max-width: 100%;
-  max-height: 32rem;
+  max-height: 33rem;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
