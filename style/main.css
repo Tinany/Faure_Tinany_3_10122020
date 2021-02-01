@@ -16,12 +16,6 @@ body, html {
   margin-left: 0;
 }
 
-@media (min-width: 1920px) {
-  .container {
-    margin-left: 280px;
-  }
-}
-
 .button {
   cursor: pointer;
   font-weight: 500;
@@ -165,8 +159,9 @@ body, html {
 
 .header {
   padding: 1rem;
-  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  position: relative;
 }
 
 .header__logo {
@@ -175,8 +170,73 @@ body, html {
   text-align: center;
 }
 
-main {
-  margin-top: 10px;
+.menu {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: -4rem;
+  padding-bottom: 20px;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f7f7f7;
+  z-index: 1;
+  position: relative;
+}
+
+.menu__header {
+  font-family: "Shrikhand";
+  padding: 1rem 2rem 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__subtitle {
+  text-transform: uppercase;
+  font-weight: 100;
+  position: relative;
+  line-height: 2;
+}
+
+.menu__subtitle :after {
+  content: "";
+  width: 2.5rem;
+  height: .2rem;
+  background-color: #99E2D0;
+  display: block;
+  margin-top: -.25rem;
+}
+
+.menu__items {
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.menu__item {
+  padding: 0;
+  margin: 0;
+}
+
+.menu__list {
+  background-color: #fff;
+  padding: 0;
+  border-radius: .75rem;
+  margin: 1rem 0;
+}
+
+.menu__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .footer {
@@ -190,12 +250,7 @@ main {
           flex-direction: column;
   padding-top: 15px;
   margin: auto;
-}
-
-@media (max-width: 1316px) {
-  .footer {
-    margin-left: -15px;
-  }
+  margin-left: -15px;
 }
 
 .footer__logo {
@@ -205,16 +260,24 @@ main {
   margin: 1rem 0 .5rem 2em;
 }
 
+@media (min-width: 768px) {
+  .footer__logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__items {
+    padding-bottom: 5px;
+  }
+}
+
 .footer__item {
   list-style: none;
   line-height: 25px;
-}
-
-.footer__item:hover {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border-bottom: 1px solid #fff;
 }
 
 .footer__item a {
@@ -295,16 +358,35 @@ main {
           box-shadow: 0.25rem 0.25rem 0.5rem rgba(82, 82, 82, 0.2);
   border-radius: 1.25rem;
   background-color: #f7f7f7;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1.1rem 1.5rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .operation__item::before {
   counter-increment: li;
   content: counter(li) "";
+  background: #9356DC;
+  color: #fff;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+  margin-left: -35px;
 }
 
 @media (max-width: 1000px) {
@@ -387,75 +469,5 @@ main {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.menu {
-  max-width: 1280px;
-  margin: auto;
-  margin-top: -4rem;
-  padding-bottom: 20px;
-  border-radius: 2rem 2rem 0 0;
-  background-color: #f7f7f7;
-  z-index: 1;
-  position: relative;
-}
-
-.menu__header {
-  font-family: "Shrikhand";
-  padding: 1rem 2rem 0 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.menu__subtitle {
-  text-transform: uppercase;
-  font-weight: 100;
-  position: relative;
-  line-height: 2;
-}
-
-.menu__subtitle :after {
-  content: "";
-  width: 2.5rem;
-  height: .20rem;
-  background-color: #99E2D0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.menu__items {
-  max-width: 100%;
-  padding: 0 1rem;
-}
-
-.menu__item {
-  padding: 0;
-  margin: 0;
-}
-
-.menu__list {
-  background-color: #fff;
-  padding: 0;
-  border-radius: .75rem;
-  margin: 1rem 0;
-}
-
-.menu__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */
