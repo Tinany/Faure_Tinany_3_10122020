@@ -1,3 +1,34 @@
+//Loader 
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(243, 243, 243, 0.9);
+    animation: loader .01s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__text {
+        font-size: 100px;
+        padding: 20px;
+        font-family: $police-logo_title;
+        background: linear-gradient(to right,  #9356DC 20%, #FF79DA 40%, #99E2D0 60%, #9356DC 80%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: shine 1s linear infinite;
+
+        @media (max-width: 1023px){
+            font-size: 50px;
+        }
+    }
+}
 //Localisation div
 .localisation {
 
@@ -43,6 +74,7 @@
         list-style: none;
         display: flex;
         padding: 0;
+        margin-left: .5rem;
 
         @media (max-width: 1000px) {
             display: flex;
@@ -104,6 +136,10 @@
         text-decoration: none;
         color: inherit; // black
         display: block;
+
+        &:hover {
+            box-shadow: $shadow;
+        }
     }
 
     &__card {

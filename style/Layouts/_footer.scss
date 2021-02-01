@@ -34,6 +34,10 @@
             text-decoration: none;
             color: $color-background;
 
+            &:hover {
+                font-weight: bold;
+            }
+
             i { //icon footer
                 width: 1.2rem;
                 margin-right: .5rem;

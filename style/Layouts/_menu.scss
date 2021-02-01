@@ -37,6 +37,21 @@
     &__items {
       max-width: 100%;
       padding: 0 1rem;
+      transform: scale(0);
+      animation: 1.5s itemsMove forwards;
+
+      &:nth-child(1){
+        animation-delay: 0s;
+      }
+      &:nth-child(2){
+        animation-delay: .1s;
+      }
+      &:nth-child(3){
+        animation-delay: .2s;
+      }
+      &:nth-child(4){
+        animation-delay: .3s;
+      }
     }
   
     &__item {
@@ -46,11 +61,34 @@
   
     &__list {
       background-color: $color-background;
-      padding: 0;
+      padding: 9px 0;
       border-radius: .75rem;
       margin: 1rem 0;
+      display: flex;
     }
-  
+
+    &__text {
+      line-height: 1px;
+      padding-left: 10px;
+      width: 90%;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    &__price {
+      font-weight: 700;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-right: 5px;
+      margin-bottom: 10px;
+    }
+
+    &__checking {
+      overflow: hidden;
+      background-color: $color-tertiary;
+    }
+
     &__footer {
   
       display: flex;
