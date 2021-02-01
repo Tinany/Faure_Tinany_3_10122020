@@ -61,28 +61,3 @@
         padding-left: 0;
     }
 }
-// Grid for legend restaurantpage
-.grid-3 {
-    display: grid;
-    grid-template-columns: 90% 10%;
-    grid-template-rows: 0.5fr 0.5fr;
-
-    :nth-child(1) { //Title
-        grid-column: 1 / 1;
-        grid-row: 1 / 1;
-        padding-left: 10px;
-        margin-bottom: -.85em;
-    }
-    :nth-child(2) { //Subtitle
-        grid-column: 1 / 1;
-        grid-row: 2 / 2;
-        padding-left: 10px;
-    }
-    :nth-child(3) { // Price
-        grid-column: 2 / 2;
-        grid-row: 2 / 2;
-        text-align: center;
-        margin-top: .90em;
-        font-weight: 700;
-    }
-}

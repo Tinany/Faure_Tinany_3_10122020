@@ -13,9 +13,10 @@
 .heart-2 {
 
     opacity: 0;
-    color: transparent;
     background: linear-gradient($color-primary, $color-secondary);
     -webkit-background-clip: text;
+    background-size: auto;
+    color: transparent;
     
     &:hover {
 
