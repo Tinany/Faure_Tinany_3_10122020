@@ -1,0 +1,35 @@
+// Heart animation
+@keyframes disapear {
+
+    0%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fill-heart {
+
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+// Button animation
+@keyframes button {
+
+    0% {
+        background-image: linear-gradient(0deg, $color-primary, $color-secondary);
+        box-shadow: $shadow;
+    }
+
+    100% {
+        background-image: linear-gradient(0deg, lighten($color-primary, 3%), lighten($color-secondary, 3%));
+        box-shadow: $darken-shadow;
+    }
+}
