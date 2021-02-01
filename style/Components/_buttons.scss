@@ -7,7 +7,10 @@
     border: 0;
     border-radius: 100px;
     color: $color-background;
-    background-color:darken($color-background, 59%);;
     background-image: linear-gradient(0deg, $color-primary, $color-secondary);
     box-shadow: $shadow;
+
+    &:hover {
+        animation: .3s button forwards;
+    }
 }
