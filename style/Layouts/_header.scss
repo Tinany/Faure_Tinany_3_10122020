@@ -1,15 +1,12 @@
 .header {
 
     padding: 1rem;
-    box-shadow: $shadow;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,.25);
+    position: relative;
     
     &__logo {
         font-family: $police-logo_title;
         margin: 0;
         text-align: center;
     }
-}
-
-main {
-    margin-top: 10px;
 }

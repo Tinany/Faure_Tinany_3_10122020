@@ -53,13 +53,24 @@
         box-shadow: 0.25rem 0.25rem 0.5rem rgba(82, 82, 82, 0.2);
         border-radius: 1.25rem;
         background-color: darken($color-background, 3%);
-        padding: 1.5rem;
+        padding: 1.5rem 1.5rem 1.1rem 1.5rem;
         flex: 1;
         margin-right: 2rem;
+        display: flex;
 
         &::before {
             counter-increment: li;
             content: counter(li) "";
+            background: $color-primary;
+            color: #fff;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            margin-left: -35px;
         }
 
         @media (max-width: 1000px) {

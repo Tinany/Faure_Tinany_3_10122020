@@ -5,25 +5,30 @@
     flex-direction: column;
     padding-top: 15px;
     margin: auto;
-
-    @media (max-width: 1316px) {
-        margin-left: -15px;
-    }
+    margin-left: -15px;
 
     &__logo {
         color: $color-background;
         font-family: $police-logo_title;
         font-size: 1.2rem;
         margin: 1rem 0 .5rem 2em;
+
+        @media (min-width: 768px) {
+            font-size: 1.5rem;
+        }
     }
+
+    &__items {
+
+        @media (min-width: 768px) {
+            padding-bottom: 5px;
+        }
+    }
+    
     &__item {
         list-style: none;
         line-height: 25px;
-        
-        &:hover {
-            width: fit-content;
-            border-bottom: 1px solid #fff;
-        }
+        width: fit-content;
 
         a { //links footer
             text-decoration: none;
