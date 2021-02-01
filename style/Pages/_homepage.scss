@@ -57,6 +57,11 @@
         flex: 1;
         margin-right: 2rem;
 
+        &::before {
+            counter-increment: li;
+            content: counter(li) "";
+        }
+
         @media (max-width: 1000px) {
             margin: 0;
             margin-bottom: 2rem;

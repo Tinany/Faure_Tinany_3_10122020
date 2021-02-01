@@ -3,6 +3,7 @@
 body, html {
   margin: 0;
   font-family: "Roboto";
+  counter-reset: li;
 }
 
 .containers {
@@ -164,12 +165,18 @@ body, html {
 
 .header {
   padding: 1rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 
 .header__logo {
   font-family: "Shrikhand";
   margin: 0;
   text-align: center;
+}
+
+main {
+  margin-top: 10px;
 }
 
 .footer {
@@ -182,6 +189,7 @@ body, html {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 15px;
+  margin: auto;
 }
 
 @media (max-width: 1316px) {
@@ -200,6 +208,13 @@ body, html {
 .footer__item {
   list-style: none;
   line-height: 25px;
+}
+
+.footer__item:hover {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid #fff;
 }
 
 .footer__item a {
@@ -285,6 +300,11 @@ body, html {
       -ms-flex: 1;
           flex: 1;
   margin-right: 2rem;
+}
+
+.operation__item::before {
+  counter-increment: li;
+  content: counter(li) "";
 }
 
 @media (max-width: 1000px) {

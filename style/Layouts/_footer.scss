@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 15px;
+    margin: auto;
 
     @media (max-width: 1316px) {
         margin-left: -15px;
@@ -18,6 +19,11 @@
     &__item {
         list-style: none;
         line-height: 25px;
+        
+        &:hover {
+            width: fit-content;
+            border-bottom: 1px solid #fff;
+        }
 
         a { //links footer
             text-decoration: none;
