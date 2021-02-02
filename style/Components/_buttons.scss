@@ -9,6 +9,7 @@
     color: $color-background;
     background-image: linear-gradient(0deg, $color-primary, $color-secondary);
     box-shadow: $shadow;
+    outline: none;
 
     &:hover {
         animation: .3s button forwards;

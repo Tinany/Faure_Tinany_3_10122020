@@ -32,6 +32,10 @@
     &:hover {
         animation: .3s disapear forwards;
     }
+
+    @media (max-width: 768px) {
+        left: 85%;
+    }
 }
 .menu__heart-2 {
 
@@ -45,5 +49,9 @@
     &:hover {
 
         animation: .5s fill-heart forwards;
+    }
+
+    @media (max-width: 768px) {
+        left: 85%;
     }
 }
