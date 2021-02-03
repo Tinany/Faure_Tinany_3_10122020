@@ -28,7 +28,7 @@
     }
 
     100% {
-        background-image: linear-gradient(0deg, lighten($color-primary, 3%), lighten($color-secondary, 3%));
+        background-image: linear-gradient(0deg, lighten($color-primary, 5%), lighten($color-secondary, 4%));
         box-shadow: $darken-shadow;
     }
 }
@@ -54,4 +54,3 @@
         transform: scale(1);
     }
 }
-// Check box animation

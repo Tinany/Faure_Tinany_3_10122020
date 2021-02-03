@@ -1,5 +1,9 @@
 .fa-heart {
-    font-size: 32px;
+
+    font-size: 30px;
+    &:hover{
+        cursor: pointer;
+    }
 }
 // Homepage hearts
 .heart-1 {

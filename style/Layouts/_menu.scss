@@ -18,6 +18,11 @@
     justify-content: space-between;
   }
 
+  &__title {
+    font-size: 1.9rem;
+    margin: 15px 0;
+  }
+
   &__subtitle {
     text-transform: uppercase;
     font-weight: 100;
@@ -57,34 +62,36 @@
   transform: scale(0);
   animation: 1.5s itemsMove forwards;
 
-  &:nth-child(1){
+  &:nth-child(2){
     animation-delay: 0s;
   }
-  &:nth-child(2){
+  &:nth-child(3){
     animation-delay: .3s;
   }
-  &:nth-child(3){
+  &:nth-child(4){
     animation-delay: .4s;
   }
-  &:nth-child(4){
+  &:nth-child(5){
     animation-delay: .5s;
   }
 
   &__text {
     flex: 1;
-    text-overflow: ellipsis; // add "..."
     overflow: hidden; 
-    white-space: nowrap;
   }
 
   &__title {
     margin: 0;
     text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
   }
 
   &__subtitle {
     margin: 0;
     text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
   }
 
   &__price {

@@ -34,9 +34,9 @@
 
     display: flex;
     justify-content: center;
-    padding: 1.25rem 1rem;
+    padding: 1rem 1rem;
     background-color: darken($color-background, 5%);
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     &__marker {
         margin-right: 1rem;
@@ -51,23 +51,29 @@
 .leading {
 
     padding: 2rem;
+    padding-bottom: 3rem;
     text-align: center;
-    background-color: darken($color-background, 2%);
+    background-color: darken($color-background, 1.5%);
 
     &__title {
         margin: 0;
+        font-weight: bold;
     }
     &__subtitle {
         font-weight: 300;
+        font-size: 1.1rem;
+        padding-bottom: 10px;
     }
 }
 //Operation section
 .operation {
 
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
 
     &__title {
         margin: 0;
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
 
     &__items {
@@ -80,11 +86,14 @@
             display: flex;
             flex-direction: column;
         }
+        :nth-child(3){
+            background-color: lighten($color-primary, 37%);
+            }
     }
     &__item {
-        box-shadow: 0.25rem 0.25rem 0.5rem rgba(82, 82, 82, 0.2);
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(143, 143, 143, 0.2);
         border-radius: 1.25rem;
-        background-color: darken($color-background, 3%);
+        background-color: darken($color-background, 1%);
         padding: 1.5rem 1.5rem 1.1rem 1.5rem;
         flex: 1;
         margin-right: 2rem;
@@ -114,14 +123,21 @@
         margin-right: 1rem;
         color: #7e7e7e;
     }
+    &__text {
+        font-weight: bold;
+    }
+}
+.fa-store {
+    color: $color-primary;
 }
 //Restaurant section
 .restaurants {
-    background-color: darken($color-background, 3%);
+    background-color: darken($color-background, 2%);
     padding: 2rem 1rem;
 
     &__title {
         margin-left: 300px;
+        padding-top: 20px;
 
         @media (max-width: 1000px) {
             margin: 0;
@@ -132,6 +148,7 @@
     &__cards {
         background-color: $color-background;
         border-radius: 1rem;
+        box-shadow: $lighten-shadow;
         position: relative; // for add new on
         text-decoration: none;
         color: inherit; // black
@@ -153,12 +170,21 @@
         border-radius: 1rem 1rem 0 0;
         box-shadow: none;
         object-fit: cover;
+        object-position: 30% 70%;
+
+        @media (max-width: 425px){
+        object-position: 100% bottom;
+        }
+    }
+    &__img--position {
+            object-position: 40% 60%;
     }
 
     &__new {
         background-color: $color-tertiary;
-        color: darken($color-tertiary, 45%);
-        padding: .5rem;
+        color: darken($color-tertiary, 50%);
+        font-weight: bold;
+        padding: .5rem .75rem;
         border-radius: .125rem;
         position: absolute; // on .cards
         top: 1rem;
