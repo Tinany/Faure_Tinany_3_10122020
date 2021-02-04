@@ -1,0 +1,31 @@
+//Loader 
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(243, 243, 243, 0.9);
+    animation: loader .01s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__text {
+        font-size: 100px;
+        padding: 20px;
+        font-family: $police-logo_title;
+        background: linear-gradient(to right,  $color-primary 20%,$color-secondary 40%, $color-tertiary 60%, $color-primary 80%); // Gradient for loader text
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: shine 1s linear infinite;
+
+        @media (max-width: 1023px){
+            font-size: 50px;
+        }
+    }
+}
