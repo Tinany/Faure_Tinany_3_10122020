@@ -1,28 +1,29 @@
+// Homepage button
 .button {
 
     cursor: pointer;
-    font-size: 1.1rem;
-    padding: 1rem 1rem;
     border: 0;
     border-radius: 100px;
+    font-size: 1.1rem;
+    padding: 1rem 1rem;
     color: $color-background;
-    background-image: linear-gradient(0deg, lighten($color-primary, 5%), $color-secondary);
-    box-shadow: $shadow;
-    outline: none;
+    background-image: linear-gradient(0deg, lighten($color-primary, 5%), $color-secondary); // gradient with purple lighten & pink
+    box-shadow: $shadow; 
+    outline: none; // remove style for outline button after clic
 
     &:hover {
-        animation: .3s button forwards;
+        animation: .3s button forwards; // lighten colors button & darken box-shadow 
     }
 }
-
+// Restaurantpage button
 .button-restaurant {
 
     cursor: pointer;
-    font-size: 1.1rem;
-    padding: 1rem 3rem;
-    margin-bottom: 15px;
     border: 0;
     border-radius: 100px;
+    font-size: 1.1rem;
+    padding: 1rem 3rem; // add padding 
+    margin-bottom: 15px; // add margin-bottom
     color: $color-background;
     background-image: linear-gradient(0deg, lighten($color-primary, 5%), $color-secondary);
     box-shadow: $shadow;

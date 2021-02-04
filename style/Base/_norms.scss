@@ -1,9 +1,10 @@
+// Properties for all page
 body, html {
-    margin: 0;
+    margin: 0; //remove margin
     font-family: $police-text;
-    counter-reset: li;
+    counter-reset: li; // reset counter for operation section
 }
-// Containers
+// Containers (Operations & Restaurants sections)
 .containers {
 
     max-width: 1280px; //sets the maximum width of containers

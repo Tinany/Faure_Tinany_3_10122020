@@ -1,14 +1,15 @@
+// Footer
 .footer {
 
-    background-color: darken($color-background, 80%);
+    background-color: darken($color-background, 80%); // darken background color
     display: flex;
-    flex-direction: column;
+    flex-direction: column; // Items order
     padding-top: 15px;
     margin: auto;
     margin-left: -15px;
 
     &__logo {
-        color: $color-background;
+        color: $color-background; 
         font-family: $police-logo_title;
         font-size: 1.2rem;
         margin: 1rem 0 .5rem 2em;
@@ -18,15 +19,15 @@
         }
     }
 
-    &__items {
+    &__items { // All links
 
         @media (min-width: 768px) {
             padding-bottom: 5px;
         }
     }
     
-    &__item {
-        list-style: none;
+    &__item { // one link
+        list-style: none; // remove basic list style
         line-height: 25px;
         width: fit-content;
 

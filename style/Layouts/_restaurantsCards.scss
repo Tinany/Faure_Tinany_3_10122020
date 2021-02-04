@@ -1,0 +1,62 @@
+//Restaurant section
+.restaurants {
+
+    background-color: darken($color-background, 2%);
+    padding: 2rem 1rem;
+
+    &__title {
+        margin-left: 300px;
+        padding-top: 20px;
+
+        @media (max-width: 1000px) {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__cards {
+        background-color: $color-background;
+        border-radius: 1rem;
+        box-shadow: $lighten-shadow;
+        position: relative; // for add new on
+        text-decoration: none;
+        color: inherit; // black
+        display: block;
+
+        &:hover {
+            box-shadow: $shadow;
+        }
+    }
+
+    &__card {
+        margin: 0;
+    }
+
+    &__img {
+        height: 12rem;
+        width: 100%;
+        border: 0 solid transparent;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: none;
+        object-fit: cover;
+        object-position: 30% 70%;
+
+        @media (max-width: 425px){ // move image position for smartphone
+        object-position: 100% bottom;
+        }
+    }
+    &__img--position { // change position for one restaurant
+            object-position: 40% 60%;
+    }
+
+    &__new {
+        background-color: $color-tertiary;
+        color: darken($color-tertiary, 50%);
+        font-weight: bold;
+        padding: .5rem .75rem;
+        border-radius: .125rem;
+        position: absolute; // on .cards
+        top: 1rem;
+        right: .75rem;
+    }
+}
