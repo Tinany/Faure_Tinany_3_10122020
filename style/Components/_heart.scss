@@ -15,6 +15,7 @@
     
     &:hover {
         animation: .3s disapear forwards; // change opacity
+        visibility: hidden;
     }
 }
 // Fill heart

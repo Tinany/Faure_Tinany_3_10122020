@@ -240,7 +240,7 @@ body, html {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: repeat(2,1fr);
       grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
@@ -324,7 +324,7 @@ body, html {
   padding-bottom: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (30%)[3];
+  -ms-grid-columns: repeat(3,30%);
       grid-template-columns: repeat(3, 30%);
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
