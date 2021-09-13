@@ -11,7 +11,7 @@ Vous pouvez trouver <a href="https://s3-eu-west-1.amazonaws.com/course.oc-static
 ### Livrables : </br>
 
 - Une page d’accueil
-- 4 ages de menu restaurant
+- 4 pages de menu restaurant
 
 ### Cahier des charges : </br>
 
